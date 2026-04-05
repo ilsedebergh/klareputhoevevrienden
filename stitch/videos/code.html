@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="nl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Klareputhoevevrienden - Sfeervideo's</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#00498d",
+                    "on-surface-variant": "#424940",
+                    "surface": "#fbf9f8",
+                    "on-tertiary-container": "#8fbaff",
+                    "secondary-container": "#fdbf13",
+                    "surface-variant": "#e4e2e1",
+                    "on-secondary-fixed": "#261a00",
+                    "background": "#fbf9f8",
+                    "on-background": "#1b1c1c",
+                    "inverse-primary": "#a7d2a0",
+                    "surface-dim": "#dcd9d9",
+                    "outline": "#72796f",
+                    "surface-container-low": "#f6f3f2",
+                    "on-primary-fixed-variant": "#2a4f29",
+                    "on-error-container": "#93000a",
+                    "secondary": "#795900",
+                    "on-secondary-container": "#6c5000",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#41673f",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#ffdf9f",
+                    "primary-fixed-dim": "#a7d2a0",
+                    "error-container": "#ffdad6",
+                    "primary": "#163b17",
+                    "tertiary-fixed-dim": "#a7c8ff",
+                    "tertiary": "#003365",
+                    "primary-fixed": "#c2eebb",
+                    "on-tertiary-fixed": "#001b3c",
+                    "on-tertiary-fixed-variant": "#004689",
+                    "surface-container-high": "#eae8e7",
+                    "primary-container": "#2d522c",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#fbf9f8",
+                    "on-primary-container": "#9ac494",
+                    "secondary-fixed-dim": "#fabd0d",
+                    "on-surface": "#1b1c1c",
+                    "surface-container-highest": "#e4e2e1",
+                    "inverse-on-surface": "#f3f0f0",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#002204",
+                    "surface-container": "#f0eded",
+                    "tertiary-fixed": "#d5e3ff",
+                    "outline-variant": "#c2c8bd",
+                    "on-secondary-fixed-variant": "#5b4300",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#303030",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .video-overlay-gradient {
+            background: linear-gradient(180deg, rgba(22, 59, 23, 0) 0%, rgba(22, 59, 23, 0.8) 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-background selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fbf9f8]/60 dark:bg-[#163b17]/60 backdrop-blur-md shadow-[0px_12px_32px_rgba(27,28,28,0.06)] flex items-center justify-between px-6 py-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#163b17] dark:text-[#fbf9f8]" data-icon="agriculture">agriculture</span>
+<span class="text-lg font-black text-[#163b17] dark:text-white tracking-tighter">Klareputhoevevrienden</span>
+</div>
+<nav class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
+<a class="text-[#1b1c1c] dark:text-white/80 hover:opacity-80 transition-opacity" href="#">Home</a>
+<a class="text-[#1b1c1c] dark:text-white/80 hover:opacity-80 transition-opacity" href="#">Galerij</a>
+<a class="text-[#2d522c] font-bold" href="#">Videos</a>
+<a class="text-[#1b1c1c] dark:text-white/80 hover:opacity-80 transition-opacity" href="#">Agenda</a>
+<a class="text-[#1b1c1c] dark:text-white/80 hover:opacity-80 transition-opacity" href="#">Contact</a>
+</nav>
+<button class="md:hidden text-[#163b17] dark:text-[#fbf9f8]">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</header>
+<main class="pt-24 pb-32">
+<!-- Hero Title Section -->
+<section class="px-6 mb-12 max-w-7xl mx-auto">
+<span class="inline-block py-1 px-4 bg-secondary-fixed text-on-secondary-fixed text-xs font-bold uppercase tracking-widest rounded-full mb-4">Media Archief</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface tracking-tight mb-4">Sfeervideo's</h1>
+<p class="text-on-surface-variant max-w-2xl text-lg leading-relaxed">Beleef de kracht van onze historische machines opnieuw. Van zonnige rondritten tot het karakteristieke ronkende geluid van erfgoed in beweging.</p>
+</section>
+<!-- Featured Video Section -->
+<section class="px-6 mb-20 max-w-7xl mx-auto">
+<div class="relative rounded-3xl overflow-hidden aspect-video shadow-[0px_20px_50px_rgba(0,0,0,0.1)] group">
+<img alt="Hoofdvideo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic wide shot of a vintage John Deere tractor driving through a golden wheat field at sunset with lens flare" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmIJfjuzQ7WaWtMA5OaVvjdE6fk_FYXDupGNnO73_wtnWRA2nOnTZbkuotDBUCKo2t-RAp5Zm_vRswdL1knuedEny1SiovPDRTbMOvADWggadVpeCfWZaELKA4ZZbG_XUbOyq5GRqlwGyG2gj8bQArmpTQjvcrNHvAi_qsK6AaxqDBtqpR1vwFjEwR9CRh36fGmf1q_vlh31bF8mZRsH5XcfLJZvpYefJXiYd4cB8CcoO-6cEhwCVmX0B9yTXi1IAG7Td29WgNL4Y"/>
+<div class="absolute inset-0 video-overlay-gradient"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="w-20 h-20 md:w-28 md:h-28 bg-secondary-container text-on-secondary-fixed rounded-full flex items-center justify-center shadow-2xl transition-transform active:scale-90 hover:scale-110">
+<span class="material-symbols-outlined text-4xl md:text-5xl" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<div class="absolute bottom-0 left-0 p-8 md:p-12 text-white">
+<div class="flex items-center gap-3 mb-2">
+<span class="bg-primary px-3 py-1 rounded text-xs font-bold uppercase tracking-tighter">Uitgelicht</span>
+<span class="text-white/70 text-sm">Zomerrit 2023</span>
+</div>
+<h2 class="font-headline text-2xl md:text-4xl font-bold">Langs de Velden: Een Dag in de Polder</h2>
+</div>
+</div>
+</section>
+<!-- Video Grid -->
+<section class="bg-surface-container-low py-20">
+<div class="px-6 max-w-7xl mx-auto">
+<div class="flex items-end justify-between mb-12">
+<div>
+<h3 class="font-headline text-3xl font-bold tracking-tight mb-2">Eerdere Edities</h3>
+<p class="text-on-surface-variant">Ontdek onze uitgebreide collectie beelden van de afgelopen jaren.</p>
+</div>
+<div class="hidden md:flex gap-4">
+<button class="w-12 h-12 rounded-full flex items-center justify-center border border-outline/20 hover:bg-white transition-colors">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<button class="w-12 h-12 rounded-full flex items-center justify-center bg-primary text-white hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Video Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative rounded-2xl overflow-hidden aspect-[4/3] mb-4 shadow-sm bg-surface-container-highest">
+<img alt="Video thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close-up of a rustic tractor engine vibrating with steam coming out of the exhaust pipe in a farm yard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj3DMqMqrcB1QuaLDdy_k7mpmyF81NQYDg0eyzcNfnE_Hd6Od2g6hRrF2_YEEMfLrpAagH9aUt0onpkjVaob2RWKJrBnzsbHaAjb9XfADi_k5rUr9GxMaVnoUHzKZis8NgkAIf4JGKAdz-X1jClEskdjLjbO4KtR1P5I7vaZEOD05-3MiSO_ounJzNX9kDtdhsFEp4Mbc6J3OAL1qsQbX0t0GR8BnHrInimo_MxqVn8i7Swc_93bKKeRuNjsL7Riv3eIFGey739qQ"/>
+<div class="absolute bottom-4 right-4 bg-black/70 text-white text-[10px] font-bold px-2 py-1 rounded backdrop-blur-sm">
+                                04:22
+                            </div>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl" data-icon="play_circle" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+</div>
+<span class="text-secondary text-xs font-bold uppercase tracking-wider mb-1 block">Oogstfeest 2022</span>
+<h4 class="font-headline text-xl font-bold leading-tight group-hover:text-primary transition-colors">De Oude Meesters aan het Werk</h4>
+</div>
+<!-- Video Card 2 -->
+<div class="group cursor-pointer">
+<div class="relative rounded-2xl overflow-hidden aspect-[4/3] mb-4 shadow-sm bg-surface-container-highest">
+<img alt="Video thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A row of colorful restored vintage tractors lined up along a green meadow with a historical farmhouse in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAq6EVkfgeUDnm20q7CW-izsAp3gdgWGND2DOoeVwVSie26gVq_sV00gBR_9xn301yywNMPNzOPMOstVwf5zbOw0vme9VZry1Rb-RmMlic6OFuirDdf1Askp8Oc9O3mRh3x0iL4mgbOtoCnAlUNy07lzpHpXWZGxOy5Jmn4LqG8wMZHhqK9Q9itKefaJNfLgjyK7yGy5W57vuPCaVV06nmch5L-lBdB8i_G4ShgOf8bAHjSnXPMieBaClRBwjMT9PbM2ILBTEAmhY"/>
+<div class="absolute bottom-4 right-4 bg-black/70 text-white text-[10px] font-bold px-2 py-1 rounded backdrop-blur-sm">
+                                12:45
+                            </div>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl" data-icon="play_circle" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+</div>
+<span class="text-secondary text-xs font-bold uppercase tracking-wider mb-1 block">Lenterit 2023</span>
+<h4 class="font-headline text-xl font-bold leading-tight group-hover:text-primary transition-colors">Bloesems en Brandstof</h4>
+</div>
+<!-- Video Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative rounded-2xl overflow-hidden aspect-[4/3] mb-4 shadow-sm bg-surface-container-highest">
+<img alt="Video thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Blurred motion shot of tractor wheels spinning in mud during a heavy pull competition at a rural fair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK4tnzH6Tv2wkuywe9pkTGiOoUhMg-b3XviLlIp4CsFKF9VSSxrSqjNr--6G-DIvrIRpeG8M1ehPRhOGkinLwdh4sk02PLDiEG8WXg9hEBcb1ib2Sno94z08jNiE0z3HQvAp987dUaDjdjnlxXEzq8EphiMKRxMbqR1PZ7pc4my6K1KoqOgd2YzT-iilPQK4cjeVtboX77glOV-Hmg8qqNoFZN4N6qJJBChiVkPMDZNLs87xN9mGYvtvGKQe1sodtcJKGqj8LOA2I"/>
+<div class="absolute bottom-4 right-4 bg-black/70 text-white text-[10px] font-bold px-2 py-1 rounded backdrop-blur-sm">
+                                08:15
+                            </div>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl" data-icon="play_circle" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+</div>
+<span class="text-secondary text-xs font-bold uppercase tracking-wider mb-1 block">Trekker Trek 2021</span>
+<h4 class="font-headline text-xl font-bold leading-tight group-hover:text-primary transition-colors">PK Geweld in de Klei</h4>
+</div>
+<!-- Video Card 4 -->
+<div class="group cursor-pointer">
+<div class="relative rounded-2xl overflow-hidden aspect-[4/3] mb-4 shadow-sm bg-surface-container-highest">
+<img alt="Video thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Interior of a rustic garage with tools hanging and sunlight streaming over a dismantled old tractor engine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUJ7YWuhCnZasrqoEYXHMhuNnEm8O5ElKwOJa4eafU23a3PaPMpkOYTNndd5LNCl1J-Tcc1WG7n10iWnYxRy79fCK8zhV6pVrzF8QZWmfHiIPmoMWGtgxmzHzUTdhIL5EGV2-z7rGNvMbL5yclHBw0h1hIVnd5npWo3zlA6ot8VZpafXcpqQPy5hxLU5r7wTQJzjW8Jg9mRCgs2qMqgXjj7ERFo9k1H-K6xyoMNF99dlrZ5RfNeBWHfFXBeY-TL8pPKh4SZ-_pR2s"/>
+<div class="absolute bottom-4 right-4 bg-black/70 text-white text-[10px] font-bold px-2 py-1 rounded backdrop-blur-sm">
+                                15:30
+                            </div>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl" data-icon="play_circle" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+</div>
+<span class="text-secondary text-xs font-bold uppercase tracking-wider mb-1 block">Documentaire</span>
+<h4 class="font-headline text-xl font-bold leading-tight group-hover:text-primary transition-colors">Restauratie: Van Roest naar Roem</h4>
+</div>
+<!-- Video Card 5 -->
+<div class="group cursor-pointer">
+<div class="relative rounded-2xl overflow-hidden aspect-[4/3] mb-4 shadow-sm bg-surface-container-highest">
+<img alt="Video thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Wide scenic shot of a sunset over a rolling Dutch landscape with a silhouetted windmill and a tractor in the distance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtm5-WehLpT5kiualg1yfbepSG68qPFzOKxkK5kWVU1h_l7cTerIJgsyxx2VBnP-DdnoZ8HkUyibbdNTZowWrmAyeNfzwotjBYocVI8dM22xheE3rwptoCJwjwwHWT26yMuC2gkhxfVVyr5SnkfmrCspchcUzsJWEDJudX52klEXvugK11Yu_R_-t53GpH9kkjdSJ_ljiMBt5kV46PpVRnM2r3b_0yEhYL2qzzAGx-lZGCXUAfpBz9dqT3mNP7iGWY_WBqpJ_t7_s"/>
+<div class="absolute bottom-4 right-4 bg-black/70 text-white text-[10px] font-bold px-2 py-1 rounded backdrop-blur-sm">
+                                03:50
+                            </div>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl" data-icon="play_circle" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+</div>
+<span class="text-secondary text-xs font-bold uppercase tracking-wider mb-1 block">Aftermovie</span>
+<h4 class="font-headline text-xl font-bold leading-tight group-hover:text-primary transition-colors">Winterrit 2022 Sfeerbeeld</h4>
+</div>
+<!-- Video Card 6 -->
+<div class="group cursor-pointer">
+<div class="relative rounded-2xl overflow-hidden aspect-[4/3] mb-4 shadow-sm bg-surface-container-highest">
+<img alt="Video thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Macro close-up of a shiny chrome tractor grille reflecting the blue sky and green grass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApu_l2WE2_2MMdlhufiaN_r3OB0S1X1muqBL8waRxudr8cnc42Ej4VozPH0fV75KAcG81hHwkerlS31TZ3wWhnkgmmIg5PyqAr5O7VWzs6gcEGLsvojUe8hevpJ5X1N4Du3L7VIuaVhrRxG_JgJ97SXhIe9x4nu2RTIJv9WQzczu8H91xqaXgTh259BrGMLhJFllLZL6MFDFc9DtWoiCGlhe7_fzt3vFz4uVxpJ8Yeue-3Q2ahxXfmmv7ld5_F11A8meQ-lgNvBAY"/>
+<div class="absolute bottom-4 right-4 bg-black/70 text-white text-[10px] font-bold px-2 py-1 rounded backdrop-blur-sm">
+                                05:45
+                            </div>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl" data-icon="play_circle" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+</div>
+<span class="text-secondary text-xs font-bold uppercase tracking-wider mb-1 block">Techniek</span>
+<h4 class="font-headline text-xl font-bold leading-tight group-hover:text-primary transition-colors">Het Geluid van Gisteren</h4>
+</div>
+</div>
+<div class="mt-16 flex justify-center">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-headline font-bold text-lg flex items-center gap-3 transition-transform active:scale-95 shadow-lg">
+                        Bekijk meer op YouTube
+                        <span class="material-symbols-outlined" data-icon="open_in_new">open_in_new</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- NavigationDrawer (Mobile Bottom Nav) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full bg-[#fbf9f8] border-t border-outline-variant/10 flex justify-around items-center px-4 py-3 z-50 shadow-[0px_-4px_24px_rgba(0,0,0,0.05)]">
+<a class="flex flex-col items-center gap-1 text-[#1b1c1c] dark:text-white/70" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] font-semibold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-[#1b1c1c] dark:text-white/70" href="#">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span class="text-[10px] font-semibold">Galerij</span>
+</a>
+<a class="flex flex-col items-center gap-1 bg-[#2d522c] text-white rounded-xl px-4 py-1" href="#">
+<span class="material-symbols-outlined" data-icon="play_circle" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span class="text-[10px] font-semibold">Videos</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-[#1b1c1c] dark:text-white/70" href="#">
+<span class="material-symbols-outlined" data-icon="event">event</span>
+<span class="text-[10px] font-semibold">Agenda</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-[#1b1c1c] dark:text-white/70" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="text-[10px] font-semibold">Contact</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="bg-[#163b17] dark:bg-[#0b1d0b] text-[#fbf9f8] flex flex-col items-center text-center p-12 gap-6 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container" data-icon="agriculture">agriculture</span>
+<span class="text-white font-bold text-xl tracking-tight">Klareputhoevevrienden</span>
+</div>
+<div class="flex flex-wrap justify-center gap-8 text-sm font-body text-white/60">
+<a class="hover:text-[#f9c34a] transition-colors" href="#">Facebook</a>
+<a class="hover:text-[#f9c34a] transition-colors" href="#">Instagram</a>
+<a class="hover:text-[#f9c34a] transition-colors" href="#">Routebeschrijving</a>
+</div>
+<div class="w-24 h-[1px] bg-white/10 my-2"></div>
+<p class="text-sm text-white/40">© 2024 Klareputhoevevrienden. Traditie in Beweging.</p>
+</footer>
+</body></html>

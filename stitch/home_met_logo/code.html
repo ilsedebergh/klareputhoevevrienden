@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="nl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Klareputhoevevrienden - Heritage Modernist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#00498d",
+                    "on-surface-variant": "#424940",
+                    "surface": "#fbf9f8",
+                    "on-tertiary-container": "#8fbaff",
+                    "secondary-container": "#fdbf13",
+                    "surface-variant": "#e4e2e1",
+                    "on-secondary-fixed": "#261a00",
+                    "background": "#fbf9f8",
+                    "on-background": "#1b1c1c",
+                    "inverse-primary": "#a7d2a0",
+                    "surface-dim": "#dcd9d9",
+                    "outline": "#72796f",
+                    "surface-container-low": "#f6f3f2",
+                    "on-primary-fixed-variant": "#2a4f29",
+                    "on-error-container": "#93000a",
+                    "secondary": "#795900",
+                    "on-secondary-container": "#6c5000",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#41673f",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#ffdf9f",
+                    "primary-fixed-dim": "#a7d2a0",
+                    "error-container": "#ffdad6",
+                    "primary": "#163b17",
+                    "tertiary-fixed-dim": "#a7c8ff",
+                    "tertiary": "#003365",
+                    "primary-fixed": "#c2eebb",
+                    "on-tertiary-fixed": "#001b3c",
+                    "on-tertiary-fixed-variant": "#004689",
+                    "surface-container-high": "#eae8e7",
+                    "primary-container": "#2d522c",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#fbf9f8",
+                    "on-primary-container": "#9ac494",
+                    "secondary-fixed-dim": "#fabd0d",
+                    "on-surface": "#1b1c1c",
+                    "surface-container-highest": "#e4e2e1",
+                    "inverse-on-surface": "#f3f0f0",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#002204",
+                    "surface-container": "#f0eded",
+                    "tertiary-fixed": "#d5e3ff",
+                    "outline-variant": "#c2c8bd",
+                    "on-secondary-fixed-variant": "#5b4300",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#303030",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(251, 249, 248, 0.6);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 w-full z-50 glass-nav shadow-[0px_12px_32px_rgba(27,28,28,0.06)]">
+<div class="flex items-center justify-between px-6 py-3 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<div class="h-10 w-24 flex items-center justify-center overflow-hidden">
+<img alt="Klareputhoevevrienden Logo" class="h-full w-full object-contain scale-125 translate-x-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvEDX0NtYeFQFvBLxibOWP8uOSPPU7Qvhj7tASxwNXOvEcgYECMKtBCTpyyf13pUrJiy3uluzSZGz6onVwhizX-hDbdeHvRY0Bs8flJHIJbt-ePdR6QWtUq-ELb1RsLWpkQcsP4SnzAialNo2fpwZt8vza0fcBNA_0h1jQrK_4OVi01xlLMbuVjDZxJshqXyDkNPhA_z5AYWC519XOxpSJRCsZ5OJSWL3TeiYRQ3oOdk7CP4EGzxWAJcr9h3jSmLvwpKrRWfHyzEc"/>
+</div>
+<span class="text-lg font-black text-primary tracking-tighter font-headline whitespace-nowrap pl-1">Klareputhoevevrienden</span>
+</div>
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold transition-opacity hover:opacity-80 font-headline" href="#">Home</a>
+<a class="text-on-background/80 transition-opacity hover:opacity-80 font-headline" href="#">Galerij</a>
+<a class="text-on-background/80 transition-opacity hover:opacity-80 font-headline" href="#">Videos</a>
+<a class="text-on-background/80 transition-opacity hover:opacity-80 font-headline" href="#">Agenda</a>
+<a class="text-on-background/80 transition-opacity hover:opacity-80 font-headline" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary md:hidden">menu</button>
+<button class="hidden md:flex bg-secondary-container text-on-secondary-fixed px-6 py-2.5 rounded-xl font-bold transition-transform active:scale-95">Word Lid</button>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section: Editorial & Asymmetric -->
+<section class="relative min-h-[751px] flex flex-col md:flex-row items-center px-6 md:px-12 py-12 gap-12 max-w-7xl mx-auto overflow-hidden">
+<div class="z-10 w-full md:w-1/2 flex flex-col items-start gap-6">
+<div class="bg-secondary-fixed text-on-secondary-fixed px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    Sedert 1994
+                </div>
+<h1 class="text-5xl md:text-7xl font-extrabold text-primary font-headline leading-[1.1] tracking-tight">
+                    Klareputhoevevrienden Poperinge
+                </h1>
+<p class="text-lg text-on-surface-variant max-w-lg leading-relaxed">
+                    Een gepassioneerde gemeenschap van liefhebbers van authentieke oldtimer tractoren. Wij bewaren de mechanische ziel van ons plattelandserfgoed met trots en vakmanschap.
+                </p>
+<div class="flex flex-wrap gap-4 mt-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:opacity-90 transition-all flex items-center gap-2">
+                        Ontdek Onze Collectie
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-surface-container-high text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-highest transition-all">
+                        Over de Club
+                    </button>
+</div>
+</div>
+<!-- Asymmetric Image Placement -->
+<div class="relative w-full md:w-1/2 aspect-[4/5] md:aspect-square group">
+<div class="absolute inset-0 bg-primary-container rounded-[2rem] rotate-3 -z-10 group-hover:rotate-2 transition-transform duration-500"></div>
+<div class="w-full h-full rounded-[2rem] overflow-hidden shadow-2xl relative">
+<img alt="Vintage Tractor" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXDe30awCgKCmZfZBcc17WlCGiP3DveGZPpgMGK-Rq5ElDZkaxRj_P9JXySioTJHl9mlvD_Li9tcR0sj20V5E8PqAxgSPQnHtoAUxmh8mae2A-iIPETiyMOj794Rya8jPfIvMEZB39xDI017JhaT3RzYgtNzj1qxsL4Iz3Yn24LmqAIPBkwpT9tYrxJnqB_DIGlOC0PtlAuZJ2tc7wPTAd8rylphYSK9rPhBnq8stDsu5UAgjTXVBAsTA34zz0RNOmhw6TSk27uFM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8 text-white">
+<span class="font-headline font-bold text-2xl">Traditie in Beweging</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Next Event Teaser: Heritage Badge & Countdown -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-surface-container-lowest p-8 md:p-12 rounded-[2.5rem] shadow-[0px_12px_32px_rgba(27,28,28,0.06)] flex flex-col md:flex-row items-center gap-12 border border-outline-variant/15">
+<div class="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left gap-4">
+<div class="w-20 h-20 bg-secondary-fixed rounded-full flex flex-col items-center justify-center text-on-secondary-fixed shadow-md">
+<span class="text-sm font-bold uppercase tracking-tighter leading-none">Aug</span>
+<span class="text-3xl font-black font-headline">24</span>
+</div>
+<h2 class="text-3xl font-extrabold text-primary font-headline">Grote Zomeroptocht</h2>
+<p class="text-on-surface-variant font-medium">De jaarlijkse parade door de Westhoek.</p>
+</div>
+<div class="flex-1 grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
+<div class="bg-surface-container p-6 rounded-2xl flex flex-col items-center">
+<span class="text-4xl font-black text-primary font-headline">12</span>
+<span class="text-xs uppercase font-bold text-on-surface-variant tracking-widest mt-1">Dagen</span>
+</div>
+<div class="bg-surface-container p-6 rounded-2xl flex flex-col items-center">
+<span class="text-4xl font-black text-primary font-headline">08</span>
+<span class="text-xs uppercase font-bold text-on-surface-variant tracking-widest mt-1">Uren</span>
+</div>
+<div class="bg-surface-container p-6 rounded-2xl flex flex-col items-center">
+<span class="text-4xl font-black text-primary font-headline">45</span>
+<span class="text-xs uppercase font-bold text-on-surface-variant tracking-widest mt-1">Min</span>
+</div>
+<div class="bg-surface-container p-6 rounded-2xl flex flex-col items-center">
+<span class="text-4xl font-black text-primary font-headline">22</span>
+<span class="text-xs uppercase font-bold text-on-surface-variant tracking-widest mt-1">Sec</span>
+</div>
+</div>
+<div class="w-full md:w-auto">
+<button class="w-full md:w-auto bg-secondary-container text-on-secondary-fixed px-10 py-5 rounded-xl font-black text-lg transition-transform hover:scale-[1.02] shadow-xl">
+                            Tickets &amp; Info
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Section: Bento-ish Grid -->
+<section class="py-32 px-6 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
+<div class="max-w-2xl">
+<span class="text-secondary font-black tracking-widest uppercase text-sm">Onze Waarden</span>
+<h2 class="text-4xl md:text-5xl font-extrabold text-primary font-headline mt-4">Samen de geschiedenis levend houden</h2>
+</div>
+<p class="text-on-surface-variant max-w-md text-lg leading-relaxed pb-2">
+                    Wij zijn meer dan een club; we zijn een familie verenigd door de geur van diesel en het geluid van authentiek vakmanschap.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto">
+<!-- Bento Card 1 -->
+<div class="md:col-span-8 bg-primary rounded-[2.5rem] p-10 text-white flex flex-col justify-between overflow-hidden relative group">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-5xl text-secondary-fixed">diversity_3</span>
+<h3 class="text-3xl font-bold mt-8 mb-4">Gemeenschap &amp; Vriendschap</h3>
+<p class="text-on-primary-container max-w-md leading-relaxed text-lg">
+                            Van gezamenlijke ritten tot technische avonden in de schuur. We delen kennis en plezier over generaties heen.
+                        </p>
+</div>
+<div class="mt-12 flex items-center gap-4 relative z-10">
+<div class="flex -space-x-4">
+<div class="w-12 h-12 rounded-full border-4 border-primary overflow-hidden bg-surface-dim">
+<img alt="Member" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9mPF4OOJODjZsJ-YnjEa_FYzec4N9Qcf0mp0Lrmj0ee2HFFmFNGoU-Pryp-fuOnUqcDxkU4MmP_kjwJHo577duT14aLkkqhnYEA_Ik1CeOpA2VOUph29PaN2BWrCtsbT4OPqNHJDgl_n6lj_vvjpm_XaXJUwDk6Wp24XFViWTTOhAymJ_rVtgwf2ixWAIFRoRue2xQ_1JLVyEDp3y89E1sAdyi-O5MFDKfMGjk730rOAZ-9qQ8fK3VH6fmB68yX450xGpl9zArOk"/>
+</div>
+<div class="w-12 h-12 rounded-full border-4 border-primary overflow-hidden bg-surface-dim">
+<img alt="Member" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkBOxxuy-ebvreChlrdC5KFkcot6MxnywbN5IWDjtd5Y6xmnF3M9Lzr9_UERglkbAxwlrrQ-h-HOuZ3IH6ZrUs94uBICdgfK2tAumr9MwHq4nVnUDQRbQtp32zKSxjtfSctUXN4FMhyiU-ffkWgPYMUOH27BkxRDLG5STtQvpyYzgaQVO3oQ90VOVInnld4MYvcNvk6nm6rFL8t4HcW7MfujPeL-nw2EmCP8uNkrjyjbvWL2PNhYcrLv622-zcx6x_eR3K8PPCmxw"/>
+</div>
+<div class="w-12 h-12 rounded-full border-4 border-primary overflow-hidden bg-secondary-container text-on-secondary-fixed font-bold flex items-center justify-center">
+                                +120
+                            </div>
+</div>
+<span class="text-sm font-semibold opacity-80">Actieve Leden</span>
+</div>
+<!-- Aesthetic Gradient -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary-container/30 rounded-full blur-3xl"></div>
+</div>
+<!-- Bento Card 2 -->
+<div class="md:col-span-4 bg-surface-container-low rounded-[2.5rem] p-10 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-6xl text-primary" style="font-variation-settings: 'FILL' 1;">history_edu</span>
+<h3 class="text-2xl font-bold text-primary mt-6 mb-4">Authentieke Traditie</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                        Wij restaureren uitsluitend met oog voor historische precisie en eerbied voor de techniek van weleer.
+                    </p>
+<div class="mt-auto pt-8 w-full">
+<div class="w-full h-40 rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Heritage" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdQeGTq8WdJ-AB7Ssok9b3lu6WoXriqDph8Jpd9NJSQwCDbclpxzin01AfXRUigSIflzbjRZt4t-7RlX3SZ8KYa6H1F3Ybp4r2dHaQYIZSF70KNdKwqlsykOgmUdY3OJKvLh-dACHMxWXbeeSz09xx31b6l_rYK2CBMokr3vTIYQYBfd2CSX73CpftiWmELnC8__iPK31LgOGF_fSYEG49sVgD-HLfEHFjCvBfPeoTBBeGs9L3XLlfxUB6tb5_R3IWC-BbdtZuCis"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section: Glassmorphism Card -->
+<section class="py-24 px-6">
+<div class="max-w-7xl mx-auto relative h-[500px] rounded-[3rem] overflow-hidden flex items-center justify-center text-center p-12">
+<img alt="Join the club" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt8-ss1Mh9OH7AB5o9phC9lm8IYNJBkUiGauctv0GUk9HgWnMxP4HVXp9Mv2DraM6Eon0IAY8ITsDxIDdOLrqtappaEdELDM9rPDuGtLN428i9WoTRG2bvlVRAjPkxkzVTrRpbcMdJpGTIgYpQAZZwd1QMTi_xmMT5mBPLtTXtOBtE0Npg4g2HYw0PA-Fj5_RTj71hpdpaRicF5EQahkj2kn9aVq4WuvyXUfO7gYSGkcfO_4_GsQQJWOLlPYd3e0Um2qrxRE445l8"/>
+<div class="absolute inset-0 bg-primary/40 backdrop-blur-[2px]"></div>
+<div class="relative z-10 max-w-2xl bg-white/10 backdrop-blur-xl border border-white/20 p-12 rounded-[2.5rem] shadow-2xl">
+<h2 class="text-4xl md:text-5xl font-black text-white font-headline leading-tight">Word deel van de Klareputhoevevrienden</h2>
+<p class="text-white/90 text-xl mt-6 mb-10 leading-relaxed font-medium">
+                        Deel je passie, leer van experts en rij mee in de mooiste optochten van België.
+                    </p>
+<button class="bg-secondary-container text-on-secondary-fixed px-12 py-5 rounded-full font-black text-xl hover:scale-105 transition-transform shadow-[0px_20px_40px_rgba(253,191,19,0.3)]">
+                        Meld Je Vandaag Nog Aan
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-primary text-surface mt-auto w-full">
+<div class="flex flex-col items-center text-center p-12 gap-8 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<div class="h-12 w-28 flex items-center justify-center overflow-hidden">
+<img alt="Klareputhoevevrienden Logo" class="h-full w-full object-contain scale-125 brightness-0 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcsjJhpwNZaeqRRR0-emKnZ9eeEHY7IekqsjYdEOKaw15Eql65j5kqAgmWAPFF6mE6DeIFJHW3xxqRmMds4-2GGrwsyf6uo8wiYBbt62myqLOr6V2cDSwnkTp1JIwr0ZmbW3P4-ji6P5SoDbr7qHONNUCOs_yjFng1nVSMVFB_a_Mfn3GtuhXmPXGhvV9RLLyFh7srN3CBWyRLW_8NI-HNG4ehichrxTLB-XXJrKzLj_ib2m0gsHUWg-AJ9vFX50WTFcbUEw249wY"/>
+</div>
+<span class="text-2xl font-black text-white tracking-tighter font-headline">Klareputhoevevrienden</span>
+</div>
+<div class="flex flex-wrap justify-center gap-8 md:gap-16">
+<a class="text-white/60 hover:text-secondary-fixed transition-colors font-medium" href="#">Facebook</a>
+<a class="text-white/60 hover:text-secondary-fixed transition-colors font-medium" href="#">Instagram</a>
+<a class="text-white/60 hover:text-secondary-fixed transition-colors font-medium" href="#">Routebeschrijving</a>
+</div>
+<div class="w-full max-w-md h-[1px] bg-white/10"></div>
+<p class="font-body text-sm text-white/60 leading-relaxed">
+                © 2024 Klareputhoevevrienden. Traditie in Beweging.
+            </p>
+</div>
+</footer>
+<!-- Mobile Bottom Navigation (Only visible on small screens) -->
+<div class="md:hidden fixed bottom-0 left-0 w-full glass-nav z-50 flex items-center justify-around py-3 px-4 shadow-[0px_-12px_32px_rgba(27,28,28,0.06)] border-t border-white/10">
+<button class="flex flex-col items-center gap-1 text-primary font-bold">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[10px] uppercase font-black tracking-widest">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-background/60">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-[10px] uppercase font-black tracking-widest">Galerij</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-background/60">
+<span class="material-symbols-outlined">event</span>
+<span class="text-[10px] uppercase font-black tracking-widest">Agenda</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-background/60">
+<span class="material-symbols-outlined">mail</span>
+<span class="text-[10px] uppercase font-black tracking-widest">Contact</span>
+</button>
+</div>
+</body></html>
