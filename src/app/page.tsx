@@ -6,18 +6,9 @@ import { getStoryBySlug } from "@/lib/storyblok-api";
 import { metadataFromStoryContent, renderStory, resolveStoryVersion } from "@/lib/story-page";
 import { ensureStoryblokInit } from "@/lib/storyblok";
 
-function resolveSlug(segments?: string[]) {
-  return !segments || segments.length === 0 ? "home" : segments.join("/");
-}
-
-export async function generateMetadata({
-  params
-}: {
-  params: Promise<{ slug?: string[] }>;
-}): Promise<Metadata> {
-  const slug = resolveSlug((await params).slug);
+export async function generateMetadata(): Promise<Metadata> {
   const { isEnabled } = await draftMode();
-  const story = await getStoryBySlug(slug, resolveStoryVersion(isEnabled));
+  const story = await getStoryBySlug("home", resolveStoryVersion(isEnabled));
 
   if (!story) {
     return {};
@@ -26,16 +17,11 @@ export async function generateMetadata({
   return metadataFromStoryContent(story.content);
 }
 
-export default async function StoryPage({
-  params
-}: {
-  params: Promise<{ slug?: string[] }>;
-}) {
+export default async function HomePage() {
   ensureStoryblokInit();
 
-  const slug = resolveSlug((await params).slug);
   const { isEnabled } = await draftMode();
-  const story = await getStoryBySlug(slug, resolveStoryVersion(isEnabled));
+  const story = await getStoryBySlug("home", resolveStoryVersion(isEnabled));
 
   if (!story) {
     notFound();
