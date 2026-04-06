@@ -18,3 +18,7 @@ export const storyblokContentToken =
 export const storyblokRegion = process.env.NEXT_PUBLIC_STORYBLOK_REGION || "eu";
 
 export const hasStoryblokConfig = Boolean(storyblokContentToken);
+
+export const storyblokPreviewSecret = process.env.STORYBLOK_PREVIEW_SECRET || "";
+
+export const hasStoryblokPreviewSecret = Boolean(storyblokPreviewSecret);

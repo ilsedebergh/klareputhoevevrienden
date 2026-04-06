@@ -1,4 +1,4 @@
-Maar# Klareputhoevevrienden
+# Klareputhoevevrienden
 
 Next.js-website met Storyblok als visueel CMS, een eventmodule, fotoalbum-overzicht en Mailchimp-embedondersteuning.
 
@@ -36,6 +36,7 @@ Als er nog geen Storyblok-token is ingesteld, gebruikt de site lokale fallback-i
    NEXT_PUBLIC_STORYBLOK_CONTENT_API_ACCESS_TOKEN=...
    STORYBLOK_SPACE_ID=...
    STORYBLOK_MANAGEMENT_TOKEN=...
+   STORYBLOK_PREVIEW_SECRET=...
    ```
 
 3. Bootstrap componenten, folders en starterpagina's:
@@ -49,6 +50,22 @@ De bootstrap maakt deze inhoudsstructuur aan:
 - root pages: `home`, `agenda`, `fotos`, `over-ons`, `contact`
 - folders: `instellingen`, `activiteiten`, `foto-albums`
 - settings story: `instellingen/site-settings`
+
+## Storyblok preview
+
+Voor de visuele editor gebruikt deze site een beveiligde preview-route:
+
+```txt
+/preview/<STORYBLOK_PREVIEW_SECRET>
+```
+
+Gebruik in Storyblok als preview-basis bijvoorbeeld:
+
+```txt
+https://jouwdomein.be/preview/<STORYBLOK_PREVIEW_SECRET>
+```
+
+Een praktische editorhandleiding staat in `docs/storyblok-editor-gids.md`.
 
 ## Eventimport
 
