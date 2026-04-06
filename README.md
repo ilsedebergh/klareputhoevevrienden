@@ -53,16 +53,16 @@ De bootstrap maakt deze inhoudsstructuur aan:
 
 ## Storyblok preview
 
-Voor de visuele editor gebruikt deze site een beveiligde preview-route:
+Voor de visuele editor gebruikt deze site een beveiligde preview-route die draft-modus activeert en daarna doorstuurt naar de juiste pagina:
 
 ```txt
-/preview/<STORYBLOK_PREVIEW_SECRET>
+/preview/<STORYBLOK_PREVIEW_SECRET>?slug={{story.full_slug}}
 ```
 
 Gebruik in Storyblok als preview-basis bijvoorbeeld:
 
 ```txt
-https://jouwdomein.be/preview/<STORYBLOK_PREVIEW_SECRET>
+https://jouwdomein.be/preview/<STORYBLOK_PREVIEW_SECRET>?slug={{story.full_slug}}
 ```
 
 Een praktische editorhandleiding staat in `docs/storyblok-editor-gids.md`.

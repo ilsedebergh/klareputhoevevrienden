@@ -28,16 +28,16 @@ Dat maakt in Storyblok automatisch de contenttypes, folders en startpagina's aan
 Gebruik in Storyblok als preview-basis deze URL:
 
 ```txt
-https://klareputhoevevriendentest.vercel.app/preview/<STORYBLOK_PREVIEW_SECRET>
+https://klareputhoevevriendentest.vercel.app/preview/<STORYBLOK_PREVIEW_SECRET>?slug={{story.full_slug}}
 ```
 
 Voorbeeld:
 
 ```txt
-https://klareputhoevevriendentest.vercel.app/preview/mijn-geheime-preview-sleutel
+https://klareputhoevevriendentest.vercel.app/preview/mijn-geheime-preview-sleutel?slug={{story.full_slug}}
 ```
 
-De preview-route zet de site in draft-modus, zodat niet-gepubliceerde wijzigingen zichtbaar zijn in de editor.
+De preview-route zet de site in draft-modus en stuurt daarna door naar de gevraagde Storyblok-pagina, zodat niet-gepubliceerde wijzigingen zichtbaar zijn in de editor.
 
 ## 3. Wat een redacteur in Storyblok ziet
 
